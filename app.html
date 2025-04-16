@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drill Generator | Colvin Soccer Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+    #drill-box {
+      margin-top: 20px;
+      font-size: 1.3rem;
+      color: #222;
+    }
+    button {
+      padding: 10px 20px;
+      background: #ef4e22;
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <h1>Soccer Drill Generator</h1>
+  <button onclick="showDrill()">Generate Drill</button>
+  <div id="drill-box"></div>
+  <p class="mt-4"><a href="scratch.html">← Back to Highlights</a></p>
+
+  <script>
+    const drills = [
+      "Dribble through 10 cones, turn, and shoot on goal.",
+      "5‑minute passing drill: one‑touch passes around a square.",
+      "Sprint from goal line to midfield and back 8 times.",
+      "Wall‑pass drill: 20 passes against wall, alternating feet.",
+      "Crossing drill: deliver 10 crosses from each wing."
+    ];
+
+    function showDrill() {
+      const box = document.getElementById('drill-box');
+      const random = drills[Math.floor(Math.random() * drills.length)];
+      box.textContent = random;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Academy Highlights | Colvin Soccer Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Final.html">Colvin Soccer Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#scratchNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="scratchNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="Final.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Side-by-side Gallery -->
+  <div class="div-box image-pair">
+    <img
+      src="my_feet_soccerball.jpeg" width="220" height="300"
+      alt="My feet next to a soccer ball on turf"
+    >
+    <img
+      src="juggle.jpeg" width="220" height="300"
+      alt="Me juggling a soccer ball"
+    >
+  </div>
+
+  <!-- Nested List of Programs -->
+  <div class="div-box">
+    <h2>Programs Overview</h2>
+    <ol>
+      <li>Youth Development
+        <ul>
+          <li>Ball control & passing drills</li>
+          <li>Team-building exercises</li>
+        </ul>
+      </li>
+      <li>Elite Training
+        <ul>
+          <li>Advanced tactics & video analysis</li>
+          <li>Strength & conditioning</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <!-- YouTube Embed -->
+  <div class="div-box">
+    <h2 id="video">Watch Our Highlights</h2>
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/kxLXEkZqYwo"
+            title="Academy Highlights"
+            allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Anchor to Stats -->
+  <a href="#tableau" class="btn btn-info">Jump to Enrollment Stats ↓</a>
+
+  <!-- Tableau Enrollment Stats -->
+  <div id="tableau" class="div-box anchor-link">
+    <h2>Enrollment Growth (Sample Data)</h2>
+    <div class="tableauPlaceholder" id="viz1688910576105" style="position: relative;">
+      <object class="tableauViz" width="100%" height="500">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
+        <param name="embed_code_version" value="3">
+        <param name="site_root" value="">
+        <param name="name" value="WorldIndicators/GDPpercapita">
+        <param name="tabs" value="no">
+        <param name="toolbar" value="yes">
+        <param name="static_image" value="https://public.tableau.com/static/images/Wo/WorldIndicators/GDPpercapita/1.png">
+        <param name="display_spinner" value="yes">
+        <param name="display_overlay" value="yes">
+        <param name="display_count" value="yes">
+        <param name="language" value="en-US">
+      </object>
+    </div>
+    <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+  </div>
+
+  <!-- Link to Drill Generator App -->
+  <div class="text-center my-4">
+    <a href="app.html" class="btn btn-warning btn-lg">Try Our Drill Generator!</a>
+  </div>
+
+  <footer class="text-center mb-4">
+    <a href="index.html" class="btn btn-primary">Back to Home</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
